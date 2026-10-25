@@ -42,7 +42,7 @@
 - **Mixed scripts.** Generated text slips Latin letters into Cyrillic words (a surname
   starting with four Latin letters and ending in Cyrillic) and Polish letters such as ł into
   Cyrillic words. After writing a file or a
-  database note with Cyrillic, search it for `[а-яё][a-ząćęłńóśźż]|[a-ząćęłńóśźż][а-яё]`.
+  database note with Cyrillic, search it for `[а-яёіїєґ][a-ząćęłńóśźż]|[a-ząćęłńóśźż][а-яёіїєґ]`.
   It catches what an eye misses.
 - **Windows shells corrupt non-ASCII arguments.** On Git Bash for Windows, Cyrillic passed
   as a command-line argument (for example `psql -c "…"`) arrives as garbage, and the error

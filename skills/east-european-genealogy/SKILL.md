@@ -1,6 +1,6 @@
 ---
 name: east-european-genealogy
-description: Runs archival family-history research for the Russian Empire (Ukraine, Russia, Belarus), Austrian Galicia and the Polish-Lithuanian Commonwealth, 1600 to 1900. Covers where to look first (lists of families before metric books), reading Cyrillic cursive and Latin parish forms without false readings, identifying people by the family around them instead of by name and age, recording what a source shows apart from what it implies, and tracking every lead until it is closed. Use whenever the user researches ancestors in Ukrainian, Russian, Polish or Galician archives, dictates or transcribes old metric records, asks where the records of a village or family are, wants a FamilySearch film or an archive case found, or asks whether two people in old records are the same, including casual phrasings like "find my great-great-grandfather's parents", "is this the same Ivan" or "what does this word in the scan say". Not for living people or 20th-century records.
+description: Runs archival family-history research for the Russian Empire (Ukraine, Russia), Austrian Galicia and the Polish-Lithuanian Commonwealth, 1600 to 1900. Covers where to look first (lists of families before metric books), reading Cyrillic cursive and Latin parish forms without false readings, identifying people by the family around them instead of by name and age, recording what a source shows apart from what it implies, and tracking every lead until it is closed. Use whenever the user researches ancestors in Ukrainian, Russian, Polish or Galician archives, dictates or transcribes old metric records, asks where the records of a village or family are, wants a FamilySearch film or an archive case found, or asks whether two people in old records are the same, including casual phrasings like "find my great-great-grandfather's parents", "is this the same Ivan" or "what does this word in the scan say". Not for living people or 20th-century records.
 ---
 
 # East European genealogy
@@ -76,14 +76,16 @@ the lead itself.
 ### 2.2 Build the place model
 
 For each village, find the administrative chain **on the date of each record**: state,
-province (guberniya / województwo / Kreis), district (uyezd / powiat / Bezirk), parish,
+province (guberniya / województwo / crown land), district (uyezd / powiat / Kreis, later
+Bezirk), parish,
 deanery, and for the Orthodox and Greek Catholic churches the eparchy. Districts were split
 and renamed many times. The district a family "moved" to is often the same land under a new
 name.
 
 A settlement-type prefix (village, sloboda, hamlet) or a change of district does not make a
 new place. Treat the old form as an alias of the same place. Two places of the same name
-are one place only when they share people or their districts do not contradict each other.
+are one place only when they share people, or when both give a district and the districts
+do not contradict each other. A row with no district links nothing on its own.
 Read `references/research-records.md` before merging or creating places in a database.
 
 ### 2.3 Find the lists
@@ -116,6 +118,9 @@ case is online. Before labelling a case offline, check:
 Read `references/familysearch-techniques.md` before working with unindexed FamilySearch
 films. Most East European records there are images only and a name search will not find
 them.
+
+Archive sites change. When a route or URL from the references fails, tell the user it
+failed, look for the current one on the site itself, and note the change with the date.
 
 ### 2.5 Read the source
 
@@ -189,7 +194,8 @@ dictated details that did not make it into the data (a patronymic, an age, a hou
 
 **Questions to the user.** Questions about identity and kinship are answered by documents
 and by the family around the person; the user often knows less than the documents do.
-Resolve the obvious cases yourself: the same child born the same day is one child. Put to the user only real choices of scope,
+Resolve the obvious cases yourself: a child with the same name, parents and birth date in
+two copies of a record is one child. Put to the user only real choices of scope,
 money or policy, a few at a time.
 
 **Language.** Reply in the user's language. Quote sources in their original script and

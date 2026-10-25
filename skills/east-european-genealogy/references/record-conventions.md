@@ -18,8 +18,10 @@ wife took. It says nothing about her birth family.
 «Adam et Regina de Kalinskie Karlowskich» is father Adam Karłowski, mother Regina née
 Kalińska. Enter the two surnames separately.
 
-**-owa and -ikha are pointers to the husband.** «Marianna Jakubowa» is Marianna, wife of
-Jakub; «Martina Ignaticha» is Martina, wife of Ignat. Neither is her surname. Keep the
+**-owa and -ikha usually point to the husband.** «Marianna Jakubowa» is most often
+Marianna, wife of Jakub; «Martina Ignaticha» is Martina, wife of Ignat. Neither is her
+surname. An -ova/-owa form can also mean a daughter (see the patronymics below); the
+household around her decides which. Keep the
 form in a note and do not normalize it into a surname.
 
 **In Galicia, a wife with the same surname as her husband is not proof of a married name.**
@@ -29,7 +31,7 @@ with records of a woman under another surname on that basis.
 ## Surname spelling
 
 - Scribes interchange forms of one surname. As a **search key**, treat the variants as one
-  surname: Kamiński and Kamieński, Rudawski and Rudowski, Loginsky and Logvinsky. In
+  surname: Rudawski and Rudowski, Kowalczuk and Kovalchuk, Loginsky and Logvinsky. In
   your own prose, name the family by the form its own records use, and quote other forms
   inside quotation marks as the source's spelling.
 - Vary the spelling of one name; never jump to a neighbouring surname. A variant search

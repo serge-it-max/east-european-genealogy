@@ -10,7 +10,7 @@
 
 Metryka (`east-european-genealogy`) — це [навичка для агента](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 (Agent Skill) для архівної генеалогії на землях Російської імперії, австрійської Галичини та
-Речі Посполитої з 1600 по 1900 рік: Україна, Росія, Білорусь, Польща.
+Речі Посполитої з 1600 по 1900 рік: Україна, Росія, Польща.
 
 У ній зібрано робочі правила родинного дослідження, де Claude з серпня 2026 року щодня
 працює помічником: чотири родові лінії, близько шістнадцяти тисяч осіб, метричні книги,
@@ -60,7 +60,7 @@ Metryka (`east-european-genealogy`) — це [навичка для агента
 | `references/sources-ukraine.md` | ЦДІАК, ЦДІАЛ та обласні архіви, API каталогу ARCHIUM, перелік справ ЦДІАК, оцифрованих FamilySearch, uaroots, шляхи до djvu одеського архіву, Вікіджерела і Commons |
 | `references/sources-poland.md` | szukajwarchiwach, Geneteka, repcyfr (акти перемишльського гродського суду) та його стрічка OAI-PMH, AGAD, цифрові бібліотеки, придомки |
 | `references/sources-russia.md` | Ревізькі казки за роками, служиві люди до 1719 року, метричні книги й сповідні відомості, джерела-зачіпки |
-| `references/familysearch-techniques.md` | Пошук неіндексованих фільмів за шифром, карта фільму, JSON-маршрути до номерів DGS і парафій фільмів, розмітка котушки з багатьох справ за розділювальними картками |
+| `references/familysearch-techniques.md` | Пошук неіндексованих фільмів за шифром, карта фільму, темп роботи за правилами FamilySearch, поодинокі запити номерів DGS і парафій фільмів, розмітка котушки з багатьох справ за розділювальними картками |
 | `references/research-records.md` | Таблиці джерел за парафіями, мітки зачіпок, реєстр відкинутих версій, люди й місця в базі даних |
 | `references/agent-conduct.md` | Перевірки на робота, фонові агенти, що зберігають роботу по ходу, економія токенів, описки зі змішуванням абеток, пастки оболонки Windows із кирилицею |
 
@@ -73,8 +73,12 @@ Metryka (`east-european-genealogy`) — це [навичка для агента
 
 ```bash
 git clone https://github.com/serge-it-max/east-european-genealogy.git ~/.claude/skills-src/east-european-genealogy
+mkdir -p ~/.claude/skills
 ln -s ~/.claude/skills-src/east-european-genealogy/skills/east-european-genealogy ~/.claude/skills/
 ```
+
+У Windows `ln -s` у Git Bash робить копію, якщо не ввімкнено режим розробника
+або `MSYS=winsymlinks:nativestrict`. Копія теж працює, але після кожного оновлення її треба скопіювати наново.
 
 Або скопіюйте `skills/east-european-genealogy` до `.claude/skills/` усередині одного проєкту.
 
@@ -108,7 +112,7 @@ Settings → Capabilities → Skills.
 
 ## Межі
 
-Не для живих людей і не для документів XX століття: військових, про репресії та депортації.
+Не для живих людей і не для документів XX століття.
 Навичка не обходить обмежень доступу: закриті фільми FamilySearch і справи, доступні лише в
 читальній залі, отримують мітку offline, і Claude шукає відкрито опубліковану копію.
 

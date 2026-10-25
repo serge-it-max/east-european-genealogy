@@ -10,7 +10,7 @@
 
 Metryka (`east-european-genealogy`) is an [Agent Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 for archival family-history research in the lands of the Russian Empire, Austrian Galicia
-and the Polish-Lithuanian Commonwealth, 1600 to 1900: Ukraine, Russia, Belarus, Poland.
+and the Polish-Lithuanian Commonwealth, 1600 to 1900: Ukraine, Russia, Poland.
 
 It holds the working rules of a family-history project that has worked daily with Claude
 as its research assistant since August 2026: four family lines, about sixteen thousand
@@ -58,7 +58,7 @@ page, tells you what to pass, and continues after you.
 | `references/sources-ukraine.md` | TsDIAK, TsDIAL and regional archives, ARCHIUM catalogue API, the TsDIAK list of FamilySearch-digitized cases, uaroots, Odesa djvu paths, Wikisource and Commons |
 | `references/sources-poland.md` | szukajwarchiwach, Geneteka, repcyfr (Przemyśl grod acts) with its OAI-PMH feed, AGAD, digital libraries, przydomki |
 | `references/sources-russia.md` | Revision tales by year, service people before 1719, metric books and confession lists, lead sources |
-| `references/familysearch-techniques.md` | Finding unindexed films by shelfmark keyword, mapping a film, JSON routes for DGS numbers and film parishes, mapping a reel of many cases by divider cards |
+| `references/familysearch-techniques.md` | Finding unindexed films by shelfmark keyword, mapping a film, pace under the Terms of Use, single lookups of DGS numbers and film parishes, mapping a reel of many cases by divider cards |
 | `references/research-records.md` | Parish source tables, lead labels, the register of rejected versions, persons and places in a database |
 | `references/agent-conduct.md` | Bot checks, background agents that save as they go, token economy, mixed-script typos, Windows shell traps with Cyrillic |
 
@@ -71,8 +71,12 @@ fails, the skill tells Claude to say so and look for the current one.
 
 ```bash
 git clone https://github.com/serge-it-max/east-european-genealogy.git ~/.claude/skills-src/east-european-genealogy
+mkdir -p ~/.claude/skills
 ln -s ~/.claude/skills-src/east-european-genealogy/skills/east-european-genealogy ~/.claude/skills/
 ```
+
+On Windows, `ln -s` in Git Bash makes a copy unless developer mode or
+`MSYS=winsymlinks:nativestrict` is on; a copy works too, but needs a fresh copy after each update.
 
 Or copy `skills/east-european-genealogy` into `.claude/skills/` inside one project.
 
@@ -106,7 +110,7 @@ where you are signed in to FamilySearch and the archive portals you use.
 
 ## Scope
 
-Not for living people, and not for 20th-century military, repression or deportation records.
+Not for living people or 20th-century records.
 It does not bypass access restrictions: restricted FamilySearch films and reading-room-only
 units are labelled offline, and Claude looks for an openly published copy.
 

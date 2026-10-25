@@ -62,15 +62,16 @@ in others, read the Cyrillic from the Latin.
 
 Greek Catholic and Roman Catholic books of Galicia are in Latin, in printed column forms.
 
-**The marriage form from the late 1830s:**
+**A marriage form used in some Galician parishes from the late 1830s:**
 
     N. filius/filia <father> <estate> in <village>
       et <mother> nata de patre <maternal grandfather>
       atq̃ matre <maternal grandmother> de <her family>
 
 - `atq̃` is atque, "and". At a line break it is easily read as a separate Polish word.
-- This form gives the **mother's** parents and never the father's. Looking for the paternal
-  grandfather in it is pointless; it is the design of the form.
+- This form gives the **mother's** parents and not the father's. Looking for the paternal
+  grandfather in it is pointless; it is the design of the form. Forms differ by parish and
+  decade, so check which columns your book has before drawing a conclusion from a gap.
 - It does not write family bynames (przydomki). Match on the parents' names, the house
   numbers and the grandmothers, never on the surname alone.
 - A Ruthenian name form (Wasyl) among uniformly Latin ones (Basilius) falls outside the

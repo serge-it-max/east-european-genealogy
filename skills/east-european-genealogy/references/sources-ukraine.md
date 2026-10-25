@@ -11,7 +11,7 @@ trust one.
 
 | Archive | Short | What it holds for genealogy |
 |---|---|---|
-| Central State Historical Archive, Kyiv | TsDIAK | Kyiv consistory (f. 224: 18th-century metric books and confession lists, including Podolian deaneries before 1795), the Kyiv central revision commission on nobility (f. 481, 1840s verification files) |
+| Central State Historical Archive, Kyiv | TsDIAK | Kyiv Spiritual Consistory (f. 127: metric books, confession lists), the collection of metric books (f. 224: 18th-century books, including Podolian Uniate deaneries before 1795), the Kyiv central revision commission on nobility (f. 481, 1840s verification files) |
 | Central State Historical Archive, Lviv | TsDIAL | Galician metric books (f. 201 Greek Catholic consistory and others), szlachta legitimation files (f. 165, op. 3), Przemyśl grod and land court books (f. 13, f. 14) |
 | State Archive of Khmelnytskyi oblast | DAKhmO | Podolian province: treasury chamber revision tales (f. 226), consistory metric books and confession lists (f. 315), noble deputy assembly (f. 230) |
 | State Archive of Vinnytsia oblast | DAVinO | Podolian revision tales and court books, estate records |
@@ -48,15 +48,10 @@ it before calling any TsDIAK case offline.
 cases, 26 000 settlements, TsDIAK, TsDIAL, oblast archives and some Polish ones), with a name
 index for the cases volunteers have transcribed. For each village it lists every case that
 mentions it: archive, fond/opys/case, years, type (metric book, confession list, other).
-It needs a login; work through the user's logged-in browser tab. The site's own search API
-answers same-origin requests from that tab:
-
-- `POST /api/search/ibook_search` with `{sid, surname, name, patronymic, location, year,
-  collections:["all"]}`: indexed records with the source case and the transcribed row;
-  results cap at 100, so split queries by place;
-- `POST /api/search/mentions` with the same body: hit counts per case;
-- `GET /api/catalog/places?q=<name>` and `GET /api/catalog/cases?sid=<settlement sid>`:
-  settlements by name and every case of one settlement.
+It needs a login; the user signs in, and Claude works in that browser tab through the
+site's own search pages, one query at a time. Search results cap at 100; when a surname
+gives more, narrow the query by place or year the way a reader would. Do not script the
+site's internal API or page through its index in bulk.
 
 Coverage of the name index is uneven: dense for some southern parishes after 1860, thin for
 Podolia before 1870. Check the village's case list against your source table every time.
@@ -76,6 +71,9 @@ on it, and pause between requests if it answers 429.
     metric books:  https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0101-0200/0037_03_0131_DAOO.djvu
     inventories:   https://archive.od.gov.ua/wp-content/old-files/EL_ARH/F/0762_01_DAOO.djvu
 
+A metric-book case can run to hundreds of megabytes (the example above is about 260 MB).
+Open one case when the user needs it; do not fetch a run of them.
+
 Several villages of one district are often bound in one case. When a year is missing for
 your village, look at the same year for neighbouring parishes: the shelfmark may already
 be known there. A neighbour's shelfmark is a candidate to open, never an answer.
@@ -83,7 +81,8 @@ be known there. A neighbour's shelfmark is a candidate to open, never an answer.
 **DAKhmO** has an ARCHIUM catalogue and a public file server with scanned cases. **Ukrainian
 Wikisource** carries many inventories (the pages in the archive namespace, "Arkhiv:"), and **Wikimedia Commons** carries
 whole cases uploaded as PDF or DjVu, named by shelfmark ("DAKhmO 226-80-437. 1796." followed by the case
-title in Ukrainian). A PDF page opens directly with `File:<name>&page=<N>`. Search Commons by the
+title in Ukrainian). A PDF page opens directly with
+`https://commons.wikimedia.org/w/index.php?title=File:<name>&page=<N>`. Search Commons by the
 shelfmark in both "226-80-437" and "f. 226, op. 80, spr. 437" forms, the latter in Ukrainian letters.
 
 ## FamilySearch copies
@@ -111,7 +110,7 @@ Read `familysearch-techniques.md`. Two Ukraine-specific points:
 ## Searching names in Ukrainian sources
 
 - Search the Ukrainian, Russian and Polish forms of a name and a village, each in its own script: Ukrainian
-  Byrlivka, Russian Byrlovka, Polish Byrłówka.
+  «Бирлівка», Russian «Бирловка», Polish «Byrłówka».
 - Uniate books of the 18th century often give Latin or Polish forms in a Cyrillic hand;
   priests sign in both scripts.
 - Revision tales of szlachta and of peasants are separate files of the same revision. A

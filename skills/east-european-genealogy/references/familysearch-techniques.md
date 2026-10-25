@@ -3,7 +3,8 @@
 Most metric books, revision tales and court files of the region are on FamilySearch as
 images with no index. A name search does not reach them; they have to be found as films and
 read. The routes below were checked on 25 October 2026 and run from a browser tab where the
-user is logged in. Never handle the user's password; the user signs in.
+user is logged in. Never handle the user's password; the user signs in. Read "Pace and the
+Terms of Use" below before any work on the site.
 
 ## Finding the film
 
@@ -33,22 +34,32 @@ user is logged in. Never handle the user's password; the user signs in.
   case open different images; that is expected.
 - The image number and the folio number of the book are independent. Note both.
 
-## Useful JSON routes
+## Pace and the Terms of Use
 
-From a familysearch.org tab with the user signed in, `fetch(url, {credentials:'include'})`
-with `accept: application/json`:
+The FamilySearch Terms of Use (https://www.familysearch.org/en/legal/terms, Code of Conduct)
+forbid using "any software, technology, or device to perform a bulk download, to scrape
+content, or to otherwise harvest" without written permission, and a violation can cost the
+right to use the site. The account at risk is the user's, and the research depends on it.
+Work at the pace of a person reading: one search, one film, one image at a time. Never page
+through a whole collection, download a film's images, or run a script over a film.
+
+## Single lookups
+
+A few answers are easier to read from the JSON the site itself loads than from the page.
+Each is one request for one thing the user is looking at, from a familysearch.org tab where
+the user is signed in (`fetch(url, {credentials:'include'})`, `accept: application/json`):
 
 | Need | Route |
 |---|---|
-| Indexed records of a collection by surname | `/service/search/hr/v2/personas?count=100&offset=N&q.surname=<S>&q.surname.exact=on&f.collectionId=<id>` |
-| DGS number of an image | `POST /search/filmdatainfo/image-data` with `{type:'image-data', args:{imageURL:<ark>, state:{imageOrFilmUrl:<ark>, viewMode:'i', selectedImageIndex:-1}, locale:'en'}}` → `dgsNum` |
-| All image ids of a film | the same endpoint with `{type:'film-data', args:{dgsNum:<DGS>, state:{i:'0', imageOrFilmUrl:'/ark:/61903/3:1:', viewMode:'i'}, locale:'en'}}` |
-| Parish of a film | `/service/search/catalog/v3/search?count=20&q.filmNumber=<DGS>` → `metadataHit.metadata.creator` |
+| DGS number of the image on screen | `POST /search/filmdatainfo/image-data` with `{type:'image-data', args:{imageURL:<ark>, state:{imageOrFilmUrl:<ark>, viewMode:'i', selectedImageIndex:-1}, locale:'en'}}` → `dgsNum` |
+| Parish of one film | `/service/search/catalog/v3/search?count=20&q.filmNumber=<DGS>` → `metadataHit.metadata.creator` |
+
+For indexed records, use Records → Search in the page, one query at a time, and read the
+results as they come.
 
 Notes:
 
-- The persona offset stops at 1000; split by place or year.
-- `q.anyPlace` and the like-place parameters re-rank results and do not filter them.
+- The place filters in record search re-rank results and do not filter them.
 - In Russian indexes, a patronymic often stands in the surname field (Ivanov with 170 000
   hits). Cap such surnames, and search a real surname with and without the patronymic.
 - The catalogue route answers only for films that have a catalogue record. Image groups
@@ -63,20 +74,22 @@ Court and nobility files are often filmed in runs, dozens of cases per reel, and
 catalogue's "item N of M" is a hint. It was wrong twice on the same reel, both times by one
 case. Map the reel by its divider cards:
 
-1. Get all image ids of the film (the film-data route above).
-2. Load each thumbnail (`/service/records/storage/deepzoomcloud/dz/v1/3:1:<ID>/thumb_p200.jpg`)
-   into an `OffscreenCanvas` and measure the share of dark pixels. A divider card (a white
-   sheet shot on black, inverted) is almost all dark and takes two consecutive images.
-3. The image after a card is the case cover. Fetch one cover per case and read them
-   together; that gives the whole map of the reel in one pass.
+1. Open the film in the image viewer and switch to the gallery (thumbnail grid) view.
+2. A divider card (a white sheet shot on black, inverted) shows as an almost black
+   thumbnail and takes two consecutive images. The user or Claude spots them by eye while
+   scrolling the grid.
+3. The image after a card is the case cover. Open each cover in turn and note the case
+   name, dates and image range; together the covers give the map of the reel.
 
 On Soviet-era covers, trust the case name, the dates and the page count. Distrust the
 inventory and bundle fields, and when the case number is corrected, take the new number.
 Inventories were renumbered, so an old number of one case can equal the new number of
 another.
 
-A 403 on a thumbnail means the film is restricted: viewable only at FamilySearch centres or
-affiliate libraries. Respect it and label the case accordingly.
+A film the viewer will not open for a signed-in user is usually restricted: viewable only at
+FamilySearch centres or affiliate libraries. Confirm the restriction notice in the viewer
+(signing out or a rate limit also blocks images), then respect it and label the case
+accordingly.
 
 ## The FamilySearch tree
 
