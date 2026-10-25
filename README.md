@@ -6,6 +6,8 @@
 
 <p align="center"><em>Families before names, lists before metric books, every lead tracked.</em></p>
 
+<p align="center">English · <a href="README.ru.md">Русский</a> · <a href="README.uk.md">Українська</a></p>
+
 Metryka (`east-european-genealogy`) is an [Agent Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 for archival family-history research in the lands of the Russian Empire, Austrian Galicia
 and the Polish-Lithuanian Commonwealth, 1600 to 1900: Ukraine, Russia, Belarus, Poland.
