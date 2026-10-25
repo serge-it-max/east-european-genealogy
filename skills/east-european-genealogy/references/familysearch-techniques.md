@@ -49,7 +49,7 @@ Notes:
 
 - The persona offset stops at 1000; split by place or year.
 - `q.anyPlace` and the like-place parameters re-rank results and do not filter them.
-- In Russian indexes, a patronymic often stands in the surname field («Иванов» with 170 000
+- In Russian indexes, a patronymic often stands in the surname field (Ivanov with 170 000
   hits). Cap such surnames, and search a real surname with and without the patronymic.
 - The catalogue route answers only for films that have a catalogue record. Image groups
   uploaded later by archives' own cameras often have none and return zero hits; take

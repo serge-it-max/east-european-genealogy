@@ -1,6 +1,6 @@
 # Reading 18th and 19th century manuscripts
 
-Rules for reading Cyrillic cursive (скоропись) and Latin parish forms of the region. Each
+Rules for reading Cyrillic cursive (skoropis) and Latin parish forms of the region. Each
 one was learned from a misreading that went into notes as a finding and had to be taken
 back.
 
@@ -10,11 +10,11 @@ Check a doubtful letter against a word on the same page where that letter is cer
 check it against a general idea of the letter's shape: hands differ, and the same scribe
 writes the same letter differently in different years.
 
-Words that almost always give a reference: the names Стефан, Феодор, Григорий, Иоанн,
-Василий; the words дѣвица, вѣрный, восприемники; household headings of the same list.
+Words that almost always give a reference: the common given names (Stefan, Feodor, Grigory, Ioann,
+Vasily) and the stock words of the form (maiden, faithful, godparents); household headings of the same list.
 
 For a doubtful capital, look at the neighbouring households. In one 1766 soul list the
-households «Лазорев» and «Даничь» stood next to each other and settled capital Л against
+households Lazorev and Danich stood next to each other and settled capital Л against
 capital Д for the whole sheet.
 
 ## Confirmation bias is the main error
@@ -34,20 +34,20 @@ alternate for one man" needs crops reviewed first.
 |---|---|
 | т and м | т has a stroke on top; м is the same shape without it. In fast writing the stroke looks like a stray flourish. |
 | д and г | д has a loop going down, like Latin g; г has no loop. |
-| н and м | н is two strokes, м is three. Check against Іωанъ. |
+| н and м | н is two strokes, м is three. Check against the name Ioann on the same sheet. |
 | Д and Л (capitals) | look alike; settle on a neighbouring household. |
-| ѣ (ять) and в | ять often looks like в inside a word. Before reading в in a surname, compare with a certain ять on the sheet. |
-| з + ѣ and дв / гв | з with a descender reads as д or г, and the ять after it as в. A root «Лодв-/Логв-» may be «Лозѣ-». |
+| ѣ (yat) and в | yat often looks like в inside a word. Before reading в in a surname, compare with a certain yat on the sheet. |
+| з + ѣ and дв / гв | з with a descender reads as д or г, and the yat after it as в. A root read as Lodv- or Logv- may be Lozě-. |
 | Г and З (capitals) | check the parish's known surnames before inventing a new one. |
 
-Grammar traps: «быша» is a verb ("were"): «восприемники быша …» means "the godparents
+Grammar traps: the Church Slavonic verb bysha ("were"): "vospriemniki bysha …" means "the godparents
 were …", and it is no name.
 
 ## Dates in Church Slavonic numerals
 
 Years in vyaz numerals: ѯ (60) and о (70) are easy to confuse. Never date a page from the
 vyaz year alone. Anchor it on a dated dean's note, a later Arabic year in the margin
-(«Рокъ 1768»), and check that the run of pages goes forward in time.
+("Rok 1768"), and check that the run of pages goes forward in time.
 
 A header year can be a scribe's slip: a page headed 1788 that sits before the dean's note
 of April 1788 belongs to 1787.

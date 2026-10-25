@@ -1,14 +1,24 @@
-# East European genealogy skill
+<p align="center">
+  <img src="docs/logo.png" alt="Metryka seal: an open metric book with a family tree growing from it, one line traced in red" width="200">
+</p>
 
-An [Agent Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
+<h1 align="center">Metryka</h1>
+
+<p align="center"><em>Families before names, lists before metric books, every lead tracked.</em></p>
+
+Metryka (`east-european-genealogy`) is an [Agent Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 for archival family-history research in the lands of the Russian Empire, Austrian Galicia
 and the Polish-Lithuanian Commonwealth, 1600 to 1900: Ukraine, Russia, Belarus, Poland.
 
 It holds the working rules of a family-history project that has worked daily with Claude
 as its research assistant since August 2026: four family lines, about sixteen thousand
 people, metric books, confession lists, revision tales and grod court books from archives
-in Kyiv, Lviv, Odesa, Khmelnytskyi, Przemyśl and Warsaw. Each rule is there because breaking it once cost a
-wrong ancestor, a lost lead or a wasted week, and each one carries that reason next to it.
+in Kyiv, Lviv, Odesa, Khmelnytskyi, Przemyśl and Warsaw. Each rule is there because
+breaking it once cost a wrong ancestor, a lost lead or a wasted week, and each one carries
+that reason next to it.
+
+The name is the word for a parish register in Polish and Ukrainian, the book this research
+keeps coming back to.
 
 ## What changes in practice
 
@@ -41,9 +51,9 @@ page, tells you what to pass, and continues after you.
 | File | Covers |
 |---|---|
 | `SKILL.md` | Ten hard rules, the research cycle from question to recorded result, working with the user (dictation, questions, scans) |
-| `references/reading-manuscripts.md` | 18th and 19th century Cyrillic cursive (т/м, д/г, Д/Л and others), Church Slavonic numerals in dates, Galician Latin parish forms |
+| `references/reading-manuscripts.md` | 18th and 19th century Cyrillic cursive (look-alike letter pairs and how to settle them), Church Slavonic numerals in dates, Galician Latin parish forms |
 | `references/record-conventions.md` | Women's surnames, spelling variants and declension in search, patronymics, why stated ages lie, estate mobility, margin notes, godparents |
-| `references/sources-ukraine.md` | ЦДІАК, ЦДІАЛ and regional archives, ARCHIUM catalogue API, the ЦДІАК list of FamilySearch-digitized cases, uaroots, Odesa djvu paths, Wikisource and Commons |
+| `references/sources-ukraine.md` | TsDIAK, TsDIAL and regional archives, ARCHIUM catalogue API, the TsDIAK list of FamilySearch-digitized cases, uaroots, Odesa djvu paths, Wikisource and Commons |
 | `references/sources-poland.md` | szukajwarchiwach, Geneteka, repcyfr (Przemyśl grod acts) with its OAI-PMH feed, AGAD, digital libraries, przydomki |
 | `references/sources-russia.md` | Revision tales by year, service people before 1719, metric books and confession lists, lead sources |
 | `references/familysearch-techniques.md` | Finding unindexed films by shelfmark keyword, mapping a film, JSON routes for DGS numbers and film parishes, mapping a reel of many cases by divider cards |

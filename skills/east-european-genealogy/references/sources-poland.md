@@ -1,7 +1,7 @@
 # Polish sources and Austrian Galicia
 
 The records of the Polish-Lithuanian Commonwealth (to 1795) and of Austrian Galicia
-(1772-1918) are split between Polish archives and the Lviv archive (ЦДІАЛ). A Galician
+(1772-1918) are split between Polish archives and the Lviv archive (TsDIAL). A Galician
 village of today's Ukraine can have its Roman Catholic books in Poland and its Greek
 Catholic books in Lviv. Routes below were checked in October 2026.
 
@@ -37,7 +37,7 @@ a whole province is a fast way to find which parishes a surname lives in.
 cover parishes that Geneteka has not reached.
 
 **repcyfr.pl** (Repozytorium Cyfrowe Poloników, a dLibra library). Scans of single acts from
-the Przemyśl grod books (ЦДІАЛ ф.13 оп.1) from the late 16th to the late 17th century, each
+the Przemyśl grod books (TsDIAL f. 13, op. 1) from the late 16th to the late 17th century, each
 act an object with its date, kind, persons named (normalized to Polish) and shelfmark. It
 also holds the Brańsk grod books of Podlasie, which a common surname will mix in.
 

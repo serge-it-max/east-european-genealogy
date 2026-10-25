@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 640" width="1280" height="640">
+  <rect width="1280" height="640" fill="#F4ECDC"/>
+  <!-- ledger page of a Latin parish register -->
+  <g stroke="#D8C8AA" stroke-width="1.5">
+    <path d="M560 150 H1220"/>
+    <path d="M560 196 H1220"/><path d="M560 242 H1220"/><path d="M560 288 H1220"/>
+    <path d="M560 334 H1220"/><path d="M560 380 H1220"/><path d="M560 426 H1220"/>
+    <path d="M560 472 H1220"/><path d="M560 518 H1220"/>
+    <path d="M560 104 V560"/><path d="M700 104 V560"/><path d="M900 104 V560"/><path d="M1080 104 V560"/><path d="M1220 104 V560"/>
+  </g>
+  <path d="M560 104 H1220" stroke="#C9B48F" stroke-width="2.5"/>
+  <g font-family="Georgia, Cambria, serif" font-style="italic" font-size="17" fill="#B59F7A">
+    <text x="574" y="134">Annus et dies</text>
+    <text x="714" y="134">Nomen baptizati</text>
+    <text x="914" y="134">Parentes</text>
+    <text x="1094" y="134">Patrini</text>
+  </g>
+  <!-- left: seal -->
+  <image href="logo.svg" xlink:href="logo.svg" x="70" y="140" width="360" height="360"/>
+  <!-- title block over the ledger -->
+  <rect x="520" y="196" width="720" height="276" fill="#F4ECDC" opacity="0.88"/>
+  <text x="560" y="300" font-family="Georgia, Cambria, serif" font-size="104" fill="#22304A" letter-spacing="2">Metryka</text>
+  <path d="M564 326 H760" stroke="#A33A2C" stroke-width="4"/>
+  <text x="560" y="376" font-family="Georgia, Cambria, serif" font-size="30" fill="#22304A">A Claude skill for archival family history</text>
+  <text x="560" y="416" font-family="Georgia, Cambria, serif" font-size="30" fill="#22304A">in Ukraine, Poland and Russia, 1600 to 1900</text>
+  <text x="560" y="452" font-family="Georgia, Cambria, serif" font-size="20" fill="#6B6A6E">Families before names · lists before metric books · every lead tracked</text>
+  <text x="70" y="596" font-family="Georgia, Cambria, serif" font-size="20" fill="#6B6A6E">github.com/serge-it-max/east-european-genealogy</text>
+  <text x="1210" y="596" font-family="Georgia, Cambria, serif" font-size="22" fill="#22304A" text-anchor="end">SergeIT</text>
+</svg>

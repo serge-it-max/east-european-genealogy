@@ -76,7 +76,7 @@ the lead itself.
 ### 2.2 Build the place model
 
 For each village, find the administrative chain **on the date of each record**: state,
-province (губерния / województwo / Kreis), district (уезд / powiat / Bezirk), parish,
+province (guberniya / województwo / Kreis), district (uyezd / powiat / Bezirk), parish,
 deanery, and for the Orthodox and Greek Catholic churches the eparchy. Districts were split
 and renamed many times. The district a family "moved" to is often the same land under a new
 name.
@@ -91,8 +91,8 @@ Read `references/research-records.md` before merging or creating places in a dat
 For each target village and period, list which family lists exist and where. The kinds, in
 rough order of usefulness:
 
-- revision tales (ревизские сказки), Russian Empire, ten revisions from 1719 to 1858;
-- confession lists (исповедные ведомости), Orthodox; Greek Catholic and Roman Catholic
+- revision tales (revizskie skazki), Russian Empire, ten revisions from 1719 to 1858;
+- confession lists (ispovednye vedomosti), Orthodox; Greek Catholic and Roman Catholic
   status animarum and Easter confession lists;
 - Polish-Lithuanian tax registers: podymne (hearth tax), pogłówne (poll tax), ofiara;
 - estate inventories (inwentarze), owner and inhabitant lists, land registers;
@@ -175,7 +175,7 @@ Do not re-read the same sources a second time. Widen the circle:
    published armorials and their footnotes, regional historical journals;
 4. design the hypothesis of how the family entered the village: dowry, purchase of a share,
    service to a landowner, a priest's family, a neighbouring village whose name the surname
-   carries (Середницкий from Середница);
+   carries (Serednytsky from Serednytsia);
 5. add at least one new direction per session, and in the report keep new sources apart
    from repeated passes.
 

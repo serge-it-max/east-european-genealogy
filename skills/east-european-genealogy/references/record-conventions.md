@@ -5,9 +5,9 @@ how an entry is read. Read before turning an entry into persons and relationship
 
 ## Women's surnames
 
-**A godmother's surname without a qualifier is her married surname.** «++ Мария Любинская»
-with no note means a married woman who bears her husband's surname. Only «девица»,
-«девка», «дочь Любинского» or similar marks the surname as her father's.
+**A godmother's surname without a qualifier is her married surname.** "Maria Lyubinskaya" as a godmother
+with no note means a married woman who bears her husband's surname. Only "devitsa",
+"devka" (maiden), "daughter of Lyubinsky" or similar marks the surname as her father's.
 
 **Roman and Greek Catholic books before 1800 often omit the mother's surname.** She is
 written by first name only. When both parents stand under one surname in the genitive
@@ -18,7 +18,7 @@ wife took. It says nothing about her birth family.
 «Adam et Regina de Kalinskie Karlowskich» is father Adam Karłowski, mother Regina née
 Kalińska. Enter the two surnames separately.
 
-**«-owa» and «-иха» are pointers to the husband.** «Marianna Jakubowa» is Marianna, wife of
+**-owa and -ikha are pointers to the husband.** «Marianna Jakubowa» is Marianna, wife of
 Jakub; «Martina Ignaticha» is Martina, wife of Ignat. Neither is her surname. Keep the
 form in a note and do not normalize it into a surname.
 
@@ -29,7 +29,7 @@ with records of a woman under another surname on that basis.
 ## Surname spelling
 
 - Scribes interchange forms of one surname. As a **search key**, treat the variants as one
-  surname: Kamiński and Kamieński, Rudawski and Rudowski, Логинский and Логвинский. In
+  surname: Kamiński and Kamieński, Rudawski and Rudowski, Loginsky and Logvinsky. In
   your own prose, name the family by the form its own records use, and quote other forms
   inside quotation marks as the source's spelling.
 - Vary the spelling of one name; never jump to a neighbouring surname. A variant search
@@ -44,17 +44,17 @@ with records of a woman under another surname on that basis.
   variant down on the person, every time. A silent normalization hides the variant from
   the next search.
 - Search the user's own data by the spelling of the metric books first, and only then by
-  the spelling of a printed book. One printed genealogy wrote «Рудавський» for a family the parish books
+  the spelling of a printed book. One printed genealogy wrote Rudavsky for a family the parish books
   call Rudowski, and a search by the printed form reported the family absent.
 
 ## Russian patronymics and given names
 
-- «Иван Петров» in a metric book or revision tale is Ivan, son of Pyotr. The second word is
+- "Ivan Petrov" in a metric book or revision tale is Ivan, son of Pyotr. The second word is
   a patronymic, not a surname. Many indexes put it in the surname field.
-- In Ukrainian and Galician possessive forms, «Іван Петрів» is Ivan, son of Petro, and
-  «Марія Іванова» is Maria, daughter of Ivan.
-- Keep two lists apart: **synonyms** (forms of one name: Иоанн, Иван, Ян, Joannes) and
-  **scribe confusions** (different names that scribes mixed up: Севастьян and Никита,
+- In Ukrainian and Galician possessive forms, "Ivan Petriv" is Ivan, son of Petro, and
+  "Mariya Ivanova" is Maria, daughter of Ivan.
+- Keep two lists apart: **synonyms** (forms of one name: Ioann, Ivan, Jan, Joannes) and
+  **scribe confusions** (different names that scribes mixed up: Sevastyan and Nikita,
   Grigorie and Gheorghe). A synonym is a match; a confusion is a match only when the date
   or the parents agree exactly.
 
@@ -78,22 +78,22 @@ with records of a woman under another surname on that basis.
 ## Estate and status
 
 - Estate moves both ways over the 19th century: impoverished szlachta and minor nobility
-  of the former Polish lands became townsmen (мещане) or odnodvortsy; dependent peasants
+  of the former Polish lands became townsmen (meshchane) or odnodvortsy; dependent peasants
   became townsmen. A difference in recorded estate is no argument against identity.
 - It is no argument for it either. A link still needs the same evidence as any other: a
   matching patronymic, place, godparents, or a direct statement.
-- A document can carry the change itself: «дворянин» crossed out and replaced by
-  «обер-офицерский сын» years later, when a certificate was issued.
-- «Временно проживающий» (temporarily residing) is a settler's status during adaptation.
+- A document can carry the change itself: "nobleman" crossed out and replaced by
+  "son of a senior officer" years later, when a certificate was issued.
+- "Temporarily residing" (vremenno prozhivayushchiy) is a settler's status during adaptation.
   Later records of the same family drop it. Its absence in another record is no argument
   against the link.
 
 ## Margin notes
 
-- **A note that an extract (выписка) was made later proves the person was alive in that
+- **A note that an extract (vypiska) was made later proves the person was alive in that
   year.** Someone ordered the extract for an official case, most often a marriage or entry
   into service. Record it as a separate fact with the year.
-- Later notes in another ink («выдана», a certificate number, a date) show that the record
+- Later notes in another ink ("issued", a certificate number, a date) show that the record
   was used for a document at that date.
 - A cross in the margin of a confession list next to a szlachta household can mark entries
   copied out for a nobility proof. Look for the proof case.

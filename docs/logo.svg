@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <path id="ringTop" d="M 76 256 A 180 180 0 0 1 436 256"/>
+    <path id="ringBottom" d="M 62 256 A 194 194 0 0 0 450 256"/>
+  </defs>
+  <!-- seal -->
+  <circle cx="256" cy="256" r="246" fill="#F4ECDC"/>
+  <circle cx="256" cy="256" r="238" fill="none" stroke="#22304A" stroke-width="10"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#22304A" stroke-width="2"/>
+  <text font-family="Georgia, Cambria, 'Times New Roman', serif" font-size="27" letter-spacing="5.5" fill="#22304A" text-anchor="middle">
+    <textPath href="#ringTop" startOffset="50%">EAST EUROPEAN GENEALOGY</textPath>
+  </text>
+  <text font-family="Georgia, Cambria, 'Times New Roman', serif" font-size="25" letter-spacing="7" fill="#22304A" text-anchor="middle">
+    <textPath href="#ringBottom" startOffset="50%">1600 · 1900</textPath>
+  </text>
+  <circle cx="84" cy="262" r="5" fill="#A33A2C"/>
+  <circle cx="428" cy="262" r="5" fill="#A33A2C"/>
+
+  <!-- tree: the found line in red, the rest in ink -->
+  <g stroke="#22304A" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M256 300 L256 238"/>
+    <path d="M256 238 C 256 216, 214 214, 206 196"/>
+    <path d="M256 238 C 256 216, 298 214, 306 196"/>
+    <path d="M306 196 C 306 178, 330 170, 334 154"/>
+    <path d="M206 196 C 206 178, 182 170, 178 154"/>
+    <path d="M206 196 C 206 178, 226 170, 230 154"/>
+  </g>
+  <path d="M306 196 C 306 178, 282 170, 278 154" stroke="#A33A2C" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M256 238 C 256 216, 298 214, 306 196" stroke="#A33A2C" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M256 300 L256 238" stroke="#A33A2C" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <g fill="#F4ECDC" stroke="#22304A" stroke-width="4">
+    <circle cx="178" cy="148" r="10"/>
+    <circle cx="230" cy="148" r="10"/>
+    <circle cx="334" cy="148" r="10"/>
+    <circle cx="206" cy="194" r="10"/>
+  </g>
+  <g fill="#A33A2C" stroke="#A33A2C" stroke-width="4">
+    <circle cx="278" cy="148" r="10"/>
+    <circle cx="306" cy="194" r="10"/>
+    <circle cx="256" cy="238" r="10"/>
+  </g>
+
+  <!-- open metric book -->
+  <g stroke="#22304A" stroke-width="5" stroke-linejoin="round" fill="#FBF6EC">
+    <path d="M256 312 C 226 296, 184 292, 146 300 L146 368 C 184 360, 226 364, 256 380 Z"/>
+    <path d="M256 312 C 286 296, 328 292, 366 300 L366 368 C 328 360, 286 364, 256 380 Z"/>
+  </g>
+  <g stroke="#22304A" stroke-width="2" opacity="0.55" fill="none">
+    <path d="M162 318 C 192 313, 222 316, 244 325"/>
+    <path d="M162 334 C 192 329, 222 332, 244 341"/>
+    <path d="M162 350 C 192 345, 222 348, 244 357"/>
+    <path d="M350 318 C 320 313, 290 316, 268 325"/>
+    <path d="M350 334 C 320 329, 290 332, 268 341"/>
+    <path d="M350 350 C 320 345, 290 348, 268 357"/>
+    <path d="M198 306 L198 361"/>
+    <path d="M314 306 L314 361"/>
+  </g>
+</svg>
